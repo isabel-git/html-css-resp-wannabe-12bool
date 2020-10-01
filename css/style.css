@@ -1,14 +1,16 @@
 /* regolegenerali */
 *{
   padding: 0;
-  margin-left: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.container > .row{
+.container {
   text-align: center;
-  background: lightgray;
 }
+
+
+
 
 /* regole di debug
 [class*="col-"] {
@@ -26,7 +28,19 @@
 
 
 @media screen and (min-width:993px){
+  .container > .row{
+    margin: 30px 0;
+    background: lightgray;
+    overflow: auto;
+  }
 
+  [class*="col-"] {
+    padding: 20px;
+  }
+
+  .row div{
+    margin-top: 30px;
+  }
   /* immagini */
   img{
     height: 100px;
@@ -38,13 +52,25 @@
     padding: 30px;
   }
 
-  [class*="col-"] {
-    padding: 20px;
-  }
 }
 
 
 @media screen and (min-width:769px) and (max-width:992px){
+
+  .container > .row{
+    margin: 0;
+    background: lightgray;
+    overflow: auto;
+  }
+
+  [class*="col-"] {
+    padding: 15px;
+  }
+
+  .row div{
+    margin-top: 20px;
+  }
+
   /* immagini */
   img{
     height: 150px;
@@ -56,12 +82,27 @@
     padding: 20px;
   }
 
-  [class*="col-"] {
-    padding: 15px;
+  hr{
+    visibility: hidden;
   }
 }
 
 @media screen and (max-width:768px){
+
+  .container > .row{
+    margin: 0;
+    background: lightgray;
+    overflow: auto;
+  }
+
+  [class*="col-"] {
+    padding: 15px;
+  }
+
+  .row div{
+    margin-top: 15px;
+  }
+
   /* immagini */
   img{
     height: 200px;
@@ -72,10 +113,4 @@
     border-radius: 50%;
     padding: 10px;
   }
-
-  [class*="col-"] {
-    padding: 15px;
-  }
-
-
 }
